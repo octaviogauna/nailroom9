@@ -27,51 +27,62 @@
         </nav>
     </header>
     <main>
-        <form>
-            <div class="form-row">
-                <div class="col-md-4 mb-3">
-                    <label for="validationCustom01">Nombre</label>
-                    <input type="text" class="form-control" id="validationCustom01" placeholder="Gabriel" value=""
-                        required>
-                    <div class="valid-feedback">
-                        Looks good!
-                    </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <form>
+                        <div class="form-row">
+                            <div class="col-md-4 mb-3">
+                                <label for="validationCustom01">Nombre</label>
+                                <input type="text" class="form-control" id="validationCustom01" placeholder="Gabriel"
+                                    value="" required>
+                                <div class="valid-feedback">
+                                    ¡Se ve bien!
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="validationCustom02">Apellido</label>
+                                <input type="text" class="form-control" id="validationCustom02" placeholder="Jofre"
+                                    value="" required>
+                                <div class="valid-feedback">
+                                    ¡Se ve bien!
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">No se compartirá con nadie tu correo</div>
+                            </div>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Recibir promociones</label>
+                        </div>
+                        <div id="emailHelp" class="form-text">Elige tu país</div>
+                        <div class="col-md-4 mb-3">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Argentina</option>
+                                <option value="1">Venezuela</option>
+                                <option value="2">Uruguay</option>
+                                <option value="3">Genovia</option>
+                                <option value="4">Brasil</option>
+                                <option value="5">Otro</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4 mb-3 col-form-floating">
+                            <label for="floatingTextarea2">Consulta:</label>
+                            <textarea class="form-control" placeholder="" id="floatingTextarea2"
+                                style="height: 100px"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-outline-dark">Enviar</button>
+                    </form>
                 </div>
-                <div class="col-md-4 mb-3">
-                    <label for="validationCustom02">Apellido</label>
-                    <input type="text" class="form-control" id="validationCustom02" placeholder="Jofre" value=""
-                        required>
-                    <div class="valid-feedback">
-                        Looks good!
-                    </div>
+                <div class="col-md-4">
+                    <img src="../img/fantasmi.gif" alt="Imagen" class="img-fluid float-end mt-4">
                 </div>
-                <div class="col-md-4 mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Correo electronico</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text">No se compartira con nadie tu correo</div />
-                </div>
-                <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Recibir promociones</label>
-                </div>
-                <div id="emailHelp" class="form-text">Elige tu pais</div>
             </div>
-            <div class="col-md-4 mb-3">
-                <select class="form-select" aria-label="Default select example">
-                    <option selected>Argentina</option>
-                    <option value="1">Venezuela</option>
-                    <option value="2">Uruguay</option>
-                    <option value="3">Genovia</option>
-                    <option value="4">Brasil</option>
-                    <option value="5">Otro</option>
-                </select>
-            </div>
-            <div class="col-md-4 mb-3 colform-floating">
-                <label for="floatingTextarea2">Consulta:</label>
-                <textarea class="form-control" placeholder="" id="floatingTextarea2" style="height: 100px"></textarea>
-            </div>
-            <button type="button" class="btn btn-outline-dark">Enviar</button>
-        </form>
+        </div>
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.0561687158975!2d-58.827389050858564!3d-27.46751064919871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94456b5c31435a77%3A0x7a1f656ff079da95!2sRotonda%20Poncho%20Verde!5e0!3m2!1ses!2sar!4v1722203609273!5m2!1ses!2sar"
             width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
@@ -120,13 +131,8 @@
                             </li>
                         </ul>
                     </div>
-
-
                 </div>
             </div>
-
-
-
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
