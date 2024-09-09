@@ -1,0 +1,35 @@
+header{
+    background-color: rgb(45, 0, 39);
+    padding: 20px;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        .logo {height: 120px; 
+            margin-right: 20px; }
+        h1{ 
+            flex-grow: 1; 
+            font-size: 60px;
+            color: rgb(255, 38, 143);
+            margin: 0; }
+            ul{
+                list-style-type: none;
+                display: flex;
+                margin: 0;
+                padding: 0;
+                li{
+                    margin-right: 30px;
+                    a{  font-size: 30px;
+                        text-decoration: none;
+                        color: rgb(255, 38, 143);
+                    }
+                }
+            }
+        }
+
+}

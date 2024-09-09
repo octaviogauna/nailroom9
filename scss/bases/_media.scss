@@ -1,0 +1,208 @@
+
+main .grid-galeria .grid-item{
+@media screen and (max-width:990px) {
+            grid-template-columns: 1fr 1fr;
+            grid-auto-rows: 220px;
+}
+}
+
+
+
+
+
+
+main .hero p {
+    @media (max-width: 1250px) {
+        font-size: 20px;
+        width: 90%;
+    }
+}
+
+main .precios {
+    @media screen and (max-width: 1080px) {
+        flex-direction: column;
+    }
+}
+
+header nav {
+    @media (max-width: 1075px) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+header nav ul {
+    @media (max-width: 1075px) {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+
+header nav ul li {
+    @media (max-width: 1075px) {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
+
+header nav ul li a {
+    @media (max-width: 1075px) {
+        font-size: 24px;
+    }
+}
+
+header .logo {
+    @media (max-width: 1075px) {
+        height: 80px;
+    }
+}
+
+header nav h1 {
+    @media (max-width: 1075px) {
+        font-size: 40px;
+    }
+}
+
+main  .grid-galeria {
+        @media screen and (max-width: 990px) {
+            grid-template-columns: 1fr 1fr;
+            grid-auto-rows: 220px;
+        }
+    }
+main .grid-item{
+    @media screen and (max-width:990px){
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+}
+
+
+main .hero {
+    @media (max-width: 768px) {
+        height: auto;
+        background-position: center;
+    }
+}
+
+main .hero h2 {
+    @media (max-width: 768px) {
+        font-size: 35px;
+    }
+}
+
+main .hero p {
+    @media (max-width: 768px) {
+        font-size: 16px;
+        width: 80%;
+    }
+}
+
+main .bienvenidos div h2 {
+    @media (max-width: 768px) {
+        font-size: 35px;
+    }
+}
+
+main .bienvenidos img {
+    @media (max-width: 768px) {
+        width: 300px;
+    }
+}
+
+main .bienvenidos p {
+    @media (max-width: 768px) {
+        font-size: 20px;
+    }
+}
+
+header nav {
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+header nav ul {
+    @media (max-width: 768px) {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+header nav ul li {
+    @media (max-width: 768px) {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
+
+header .logo {
+    @media (max-width: 768px) {
+        height: 60px;
+    }
+}
+
+header nav h1 {
+    @media (max-width: 768px) {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+}
+
+header nav ul li a {
+    @media (max-width: 768px) {
+        font-size: 24px;
+    }
+}
+
+
+main .hero h2 {
+    @media (max-width: 350px) {
+        font-size: 28px;
+    }
+}
+
+main .hero p {
+    @media (max-width: 350px) {
+        font-size: 14px;
+        width: 90%;
+    }
+}
+main .bienvenidos {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    @media (max-width: 630px) {
+        flex-direction: column; 
+        align-items: center; 
+    }
+}
+
+main .bienvenidos div h2 {
+    @media (max-width: 630px) {
+        font-size: 28px;
+    }
+}
+
+main .bienvenidos p {
+    width: 80%; 
+    font-size: 16px;
+
+    @media (max-width: 630px) {
+        margin: 3px 8px; 
+        text-align: center; 
+    }
+}
+
+main .bienvenidos img {
+    max-width: 100%;  
+    height: auto; 
+    display: block;   
+    @media (max-width: 630px) {
+        width: 100%; 
+        max-width: 300px; 
+
+}
+}
+
