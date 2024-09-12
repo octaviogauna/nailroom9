@@ -313,13 +313,6 @@ main .grid-galeria {
     @media screen and (max-width: 555px) {
       main .grid-galeria .scream {
         grid-column: span 1; } }
-  @media screen and (max-width: 990px) {
-    main .grid-galeria {
-      grid-column: span 1;
-      grid-row: span 1; } }
-  @media screen and (max-width: 555px) {
-    main .grid-galeria {
-      grid-column: span 1; } }
 
 main .naruto {
   grid-row: span 2; }
@@ -329,6 +322,16 @@ main .naruto {
       grid-row: span 1; } }
   @media screen and (max-width: 555px) {
     main .naruto {
+      grid-column: span 1; } }
+
+main .toji {
+  grid-row: span 2; }
+  @media screen and (max-width: 990px) {
+    main .toji {
+      grid-column: span 1;
+      grid-row: span 1; } }
+  @media screen and (max-width: 555px) {
+    main .toji {
       grid-column: span 1; } }
 
 main .wrapper .content .conteiner-classs {

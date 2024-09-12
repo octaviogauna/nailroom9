@@ -177,6 +177,10 @@ main {
                 grid-column: span 1;
             }
         }
+    }
+
+    .naruto {
+        grid-row: span 2;
 
         @include tablet {
             grid-column: span 1;
@@ -187,8 +191,7 @@ main {
             grid-column: span 1;
         }
     }
-
-    .naruto {
+    .toji {
         grid-row: span 2;
 
         @include tablet {
