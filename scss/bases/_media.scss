@@ -1,10 +1,25 @@
-@mixin tablet{
-    @media screen and (max-width:990px){
+@mixin masomenosgrand{
+    @media screen and(max-width:1475px){
         @content;
+    }
 }
+@mixin mediano{
+    @media screen and (max-width:1232px) {
+        @content;
+    }
 }
-@mixin mobile{
-    @media screen and(max-width:555px){
+@mixin tablet {
+    @media screen and (max-width:990px) {
+        @content;
+    }
+}
+@mixin mobilee {
+    @media screen and(max-width:600px){
+        @content;
+    }
+}
+@mixin mobile {
+    @media screen and(max-width:555px) {
         @content;
     }
 }
@@ -12,23 +27,26 @@
 
 
 
-main .grid-galeria .grid-item{
-@media screen and (max-width:990px) {
-            grid-template-columns: 1fr 1fr;
-            grid-auto-rows: 220px;
+
+main .grid-galeria .grid-item {
+    @media screen and (max-width:990px) {
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 220px;
+    }
 }
-}
-main  .grid-galeria {
+
+main .grid-galeria {
     @media screen and (max-width: 990px) {
         grid-template-columns: 1fr 1fr;
         grid-auto-rows: 220px;
     }
 }
-main .grid-item{
-@media screen and (max-width:990px){
-    grid-column: span 1;
-    grid-row: span 1;
-}
+
+main .grid-item {
+    @media screen and (max-width:990px) {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
 }
 
 
@@ -181,13 +199,15 @@ main .hero p {
         width: 90%;
     }
 }
+
 main .bienvenidos {
     display: flex;
     flex-direction: row;
     width: 100%;
+
     @media (max-width: 630px) {
-        flex-direction: column; 
-        align-items: center; 
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -198,23 +218,23 @@ main .bienvenidos div h2 {
 }
 
 main .bienvenidos p {
-    width: 80%; 
+    width: 80%;
     font-size: 12px;
 
     @media (max-width: 630px) {
-        margin: 3px 8px; 
-        text-align: center; 
+        margin: 3px 8px;
+        text-align: center;
     }
 }
 
 main .bienvenidos img {
-    max-width: 100%;  
-    height: auto; 
-    display: block;   
+    max-width: 100%;
+    height: auto;
+    display: block;
+
     @media (max-width: 630px) {
-        width: 100%; 
-        max-width: 300px; 
+        width: 100%;
+        max-width: 300px;
 
+    }
 }
-}
-

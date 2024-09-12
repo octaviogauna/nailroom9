@@ -158,34 +158,84 @@ body {
 header {
   background-color: #2d0027;
   padding: 20px;
-  position: sticky;
   display: flex;
-  justify-content: space-between;
-  align-items: center; }
-  header nav {
+  flex-direction: row;
+  justify-content: space-between; }
+  header nav .container-fluid {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: 100%; }
-    header nav .logo {
-      height: 120px;
-      margin-right: 20px; }
-    header nav h1 {
-      flex-grow: 1;
-      font-size: 60px;
-      color: #ff268f;
-      margin: 0; }
-    header nav ul {
-      list-style-type: none;
-      display: flex;
-      margin: 0;
-      padding: 0; }
-      header nav ul li {
-        margin-right: 30px; }
-        header nav ul li a {
-          font-size: 30px;
-          text-decoration: none;
-          color: #ff268f; }
+    justify-content: space-between; }
+  header nav .navbar-brand {
+    color: #ff268f;
+    font-size: 3rem;
+    display: flex;
+    align-items: center; }
+    header nav .navbar-brand img {
+      margin-right: 10px; }
+    @media screen and (max-width: 555px) {
+      header nav .navbar-brand {
+        font-size: 2rem;
+        flex-direction: column;
+        align-items: center;
+        text-align: center; }
+        header nav .navbar-brand img {
+          margin-bottom: 10px; } }
+  header nav .navbar-toggler {
+    border: none !important; }
+    @media screen and (max-width: 555px) {
+      header nav .navbar-toggler {
+        order: 1;
+        margin-top: 10px;
+        display: block;
+        width: 100%; } }
+  header nav .navbar-toggler:focus {
+    box-shadow: none !important; }
+  header nav .navbar-nav {
+    margin-left: 750px;
+    font-size: 25px; }
+    @media screen and (max-width: 1475px) {
+      header nav .navbar-nav {
+        margin-left: 500px; } }
+    @media screen and (max-width: 1232px) {
+      header nav .navbar-nav {
+        margin-left: 250px; } }
+    @media screen and (max-width: 555px) {
+      header nav .navbar-nav {
+        font-size: 18px;
+        margin-left: 0;
+        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; } }
+  header nav .nav-link {
+    color: #ff268f; }
+    @media screen and (max-width: 555px) {
+      header nav .nav-link {
+        font-size: 16px; } }
+  header nav .dropdown-menu {
+    background-color: #8c00ff;
+    max-width: 300px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: absolute;
+    right: 0; }
+    header nav .dropdown-menu .dropdown-item:hover {
+      background-color: black;
+      color: #f200ff; }
+    @media screen and (max-width: 555px) {
+      header nav .dropdown-menu {
+        position: static;
+        width: 100%;
+        right: auto; } }
+  @media screen and (max-width: 555px) {
+    header {
+      flex-direction: column;
+      align-items: center; }
+      header .navbar-toggler {
+        margin-top: 10px; } }
 
 main .hero {
   width: 100%;
@@ -407,12 +457,14 @@ main .precios {
     main .precios {
       flex-direction: column; } }
   main .precios div h3 {
-    margin-left: 25px;
     font-size: 60px;
     width: 100%; }
+    @media screen and (max-width: 600px) {
+      main .precios div h3 {
+        font-size: 50px; } }
     @media screen and (max-width: 555px) {
       main .precios div h3 {
-        font-size: 30px; } }
+        font-size: 27px; } }
   main .precios img {
     width: 50%;
     object-fit: cover;

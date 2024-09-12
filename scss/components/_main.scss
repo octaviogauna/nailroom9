@@ -191,6 +191,7 @@ main {
             grid-column: span 1;
         }
     }
+
     .toji {
         grid-row: span 2;
 
@@ -310,19 +311,26 @@ main {
         padding: 15px;
         color: rgb(111, 0, 255);
         justify-content: space-between;
-        @include tablet{
+
+        @include tablet {
             flex-direction: column;
         }
+
         div {
             h3 {
-                margin-left: 25px;
+                
                 font-size: 60px;
                 width: 100%;
+
+                @include mobilee {
+                    font-size: 50px;
+                }
                 @include mobile{
-                    font-size: 30px;
+                    font-size: 27px;
                 }
             }
         }
+
         img {
             width: 50%;
             object-fit: cover;
