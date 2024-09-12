@@ -3,46 +3,49 @@ header {
     padding: 20px;
 
     display: flex;
-    flex-direction: row; 
-    justify-content: space-between; 
+    flex-direction: row;
+    justify-content: space-between;
 
     nav {
         .container-fluid {
             display: flex;
             align-items: center;
-            justify-content: space-between; 
+            justify-content: space-between;
         }
 
         .navbar-brand {
             color: rgb(255, 38, 143);
             font-size: 3rem;
             display: flex;
-            align-items: center; 
+            align-items: center;
 
             img {
-                margin-right: 10px; 
+                margin-right: 10px;
             }
 
             @include mobile {
                 font-size: 2rem;
-                flex-direction: column; 
-                align-items: center; 
-                text-align: center; 
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                justify-content: flex-end;
+                width: 100%;
 
                 img {
-                    margin-bottom: 10px; 
+                    margin-right: 10px;
                 }
             }
         }
 
         .navbar-toggler {
             border: none !important;
+            margin-left: auto;
 
             @include mobile {
-                order: 1; 
-                margin-top: 10px; 
-                display: block; 
-                width: 100%; 
+                order: 1;
+                margin-top: 10px;
+                display: block;
+                width: 100%;
             }
         }
 
@@ -53,20 +56,23 @@ header {
         .navbar-nav {
             margin-left: 750px;
             font-size: 25px;
-            @include masomenosgrand{
+
+            @include masomenosgrand {
                 margin-left: 500px;
             }
-            @include mediano{
+
+            @include mediano {
                 margin-left: 250px;
             }
+
             @include mobile {
                 font-size: 18px;
-                margin-left: 0; 
-                text-align: center; 
-                width: 100%; 
+                margin-left: 0;
+                text-align: center;
+                width: 100%;
                 display: flex;
-                flex-direction: column; 
-                align-items: center; 
+                flex-direction: column;
+                align-items: center;
             }
         }
 
@@ -86,7 +92,7 @@ header {
             box-sizing: border-box;
             overflow: hidden;
             position: absolute;
-            right: 0; 
+            right: 0;
 
             .dropdown-item {
                 &:hover {
@@ -96,18 +102,19 @@ header {
             }
 
             @include mobile {
-                position: static; 
-                width: 100%; 
-                right: auto; 
+                position: static;
+                width: 100%;
+                right: auto;
             }
         }
     }
 
     @include mobile {
-        flex-direction: column; 
-        align-items: center; 
+        flex-direction: column;
+        align-items: center;
+
         .navbar-toggler {
-            margin-top: 10px; 
+            margin-top: 10px;
         }
     }
 }

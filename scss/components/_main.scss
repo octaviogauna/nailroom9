@@ -14,13 +14,15 @@ main {
         padding: 0 20px;
 
         h2 {
-            font-size: 50px;
+            font-size: 60px;
             border: 2px solid rgb(153, 71, 230);
             display: inline-block;
             padding: 10px;
             color: rgba(111, 0, 255, 0.868);
             margin: 0;
-
+        @include mobile{
+            font-size: 45px;
+        }
         }
 
         p {
