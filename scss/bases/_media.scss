@@ -8,6 +8,11 @@
         @content;
     }
 }
+@mixin tablet-pro{
+    @media screen and(max-width:1040px){
+        @content;
+    }
+}
 @mixin tablet {
     @media screen and (max-width:990px) {
         @content;
